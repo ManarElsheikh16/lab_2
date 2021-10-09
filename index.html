@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Lab 2 HTML</title>
+        <style>
+            table,td,th{
+             border: 1px solid black;
+             border-collapse: collapse;
+            } 
+            th,td{
+            padding: 15px;
+            } 
+            td {
+            text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <table style="width: 100%;">
+         <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Salary</th>
+            <th>Position</th>
+            <th>Age</th>
+            <th>Actions</th>
+         </tr>
+         <tr>
+             <td>NA</td>
+             <td><input type="none"/></td>
+             <td><input type="none"/></td>
+             <td><input type="none"/></td>
+             <td><input type="none"/></td>
+             <td><input type="none"/></td>
+             <td>NA</td>
+         </tr>
+         <tr>
+            <td>1</td>
+            <td>manar</td>
+            <td>elsheikh</td>
+            <td>5000</td>
+            <td>instructor</td>
+            <td>28</td>
+            <td>
+                <span>
+                    <input type="button" value="Details" style="background-color: blue;"/>
+                    <input type="button" value="Edit" style="background-color: green;"/>
+                    <input type="button" value="Delete" style="background-color:red;"/>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>ahmed</td>
+            <td>mohamed</td>
+            <td>5000</td>
+            <td>trainning manager</td>
+            <td>35</td>
+            <td>
+                <span>
+                    <input type="button" value="Details" style="background-color: blue;"/>
+                    <input type="button" value="Edit"  style="background-color: green;"/>
+                    <input type="button" value="Delete" style="background-color:red;"/>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>hany</td>
+            <td>saad</td>
+            <td>5000</td>
+            <td>instructor</td>
+            <td>33</td>
+            <td>
+                <span>
+                    <input type="button" value="Details" style="background-color: blue;"/>
+                    <input type="button" value="Edit"    style="background-color: green;"/>
+                    <input type="button" value="Delete"  style="background-color:red;"/>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>mohamed</td>
+            <td>soliman</td>
+            <td>5000</td>
+            <td>instructor</td>
+            <td>25</td>
+            <td>
+                <span>
+                    <input type="button" value="Details"style="background-color: blue"/>
+                    <input type="button" value="Edit"   style="background-color: green;"/>
+                    <input type="button" value="Delete" style="background-color:red;"/>
+                </span>
+            </td>
+        </tr>
+        </table>
+          <br/>
+          <br/>
+        <form action="Thankyou.html" method="GET">
+        <fieldset>
+            <legend>Registeration Form</legend>
+            <label for="ID">User ID </label>
+            <input type="number" name="ID" hidden/>
+            <br/>
+            <br/>
+            <label for="fname">First Name </label>
+            <input type="text" name="fname" required  tabindex="-3"/>
+            <br/>
+            <br/>
+            <label for="lname">Last Name </label>
+            <input type="text" name="lname" required />
+            <br/>
+            <br/>
+            <label for="email">Email </label>
+            <input type="email" name="email" required />
+            <br/>
+            <br/>
+            <label for="pass">Password </label>
+            <input type="password" name="pass" tabindex="-1"/>
+            <br/>
+            <br/>
+            <label for="birth">Birth Date </label>
+            <input type="date" name="birth"  />
+            <br/>
+            <br/>
+            <label for="pic">User Picture </label>
+            <input type="file" name="pic"  />
+            <br/>
+            <br/>
+        <fieldset >
+            <legend >Gender</legend>
+            <input type="radio" name="gender" />
+            <label>male</label>
+            <input type="radio" name="gender" />
+            <label>female</label>
+        </fieldset>
+            <br/>
+            <br/>
+            <label for="Faculty">Faculty</label>
+            <select name="Faculty">
+                <option >computers and informations technology</option>
+                <option >Faculty of science</option>
+            </select>
+            <br/>
+            <br/>
+            <fieldset >
+                <legend >Intersts</legend>
+            
+            <input type="checkbox" name="hobbies" value="programming" />
+            <label>programming</label>
+            <br/>
+            <input type="checkbox" name="hobbies" value="reading" />
+            <label >reading</label>
+            <br/>
+            <input type="checkbox" name="hobbies" value=swimming />
+            <label >swimming</label>
+            </fieldset>
+            <br/>
+            <br/>
+            <label for="teat">About you</label>
+            <br/>
+            <textarea name="teat" row="800" col="800" tabindex="4"></textarea>
+            <br/>
+            <br/>
+            <input type="checkbox" name="agree" />
+            <label for="agree" ><a  href=Thankyou.htmlt="_blank">I agree to terms and conditions<a/></label>
+            <br/>
+            <br/>
+            <input type="submit" tabindex="-2"></input>
+            <input type="reset"></input>
+        </fieldset>
+
+        </form>
+    </body>
+</html>
